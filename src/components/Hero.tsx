@@ -1,5 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone, MessageCircle } from "lucide-react";
+import { Link } from "react-scroll";
+
+<Link to="contactSection" smooth={true} duration={800}>
+  <button>Get Visa Now</button>
+</Link>;
 
 const phoneNumber = "+923443443047";
 export const Hero = () => {
@@ -45,12 +50,14 @@ export const Hero = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-amber-500 to-yellow-600 hover:from-amber-600 hover:to-yellow-700 text-white font-semibold px-8 py-4 text-lg group">
-              Get Your Visa Now
-              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
+            <Link to="contactSection" smooth={true} duration={1200}>
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-amber-500 to-yellow-600 hover:from-amber-600 hover:to-yellow-700 text-white font-semibold px-8 py-4 text-lg group">
+                Get Your Visa Now
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </Link>
 
             <div className="flex gap-3">
               <Button
