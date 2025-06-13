@@ -1,16 +1,26 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Briefcase, Users, Heart, GraduationCap, Building, Stethoscope } from "lucide-react";
+import {
+  Briefcase,
+  Users,
+  Heart,
+  GraduationCap,
+  Building,
+  Stethoscope,
+} from "lucide-react";
 
 const visaServices = [
   {
     icon: Briefcase,
     title: "Work Visa",
     description: "Professional work permits for all Saudi sectors",
-    features: ["Multiple entry", "1-2 year validity", "Family sponsorship available"],
+    features: [
+      "Multiple entry",
+      "1-2 year validity",
+      "Family sponsorship available",
+    ],
     bgColor: "bg-blue-100",
-    iconColor: "text-blue-600"
+    iconColor: "text-blue-600",
   },
   {
     icon: Heart,
@@ -18,7 +28,7 @@ const visaServices = [
     description: "Sacred journey permits with complete guidance",
     features: ["Group packages", "Individual permits", "Religious guidance"],
     bgColor: "bg-green-100",
-    iconColor: "text-green-600"
+    iconColor: "text-green-600",
   },
   {
     icon: Users,
@@ -26,7 +36,7 @@ const visaServices = [
     description: "Tourist and family visit permits",
     features: ["30-90 days", "Multiple entry", "Tourist attractions access"],
     bgColor: "bg-purple-100",
-    iconColor: "text-purple-600"
+    iconColor: "text-purple-600",
   },
   {
     icon: Building,
@@ -34,7 +44,7 @@ const visaServices = [
     description: "Commercial and investment permits",
     features: ["Meeting permits", "Investment visas", "Trade licenses"],
     bgColor: "bg-orange-100",
-    iconColor: "text-orange-600"
+    iconColor: "text-orange-600",
   },
   {
     icon: Users,
@@ -42,7 +52,7 @@ const visaServices = [
     description: "Family reunion and dependent permits",
     features: ["Spouse visas", "Children permits", "Parent visas"],
     bgColor: "bg-pink-100",
-    iconColor: "text-pink-600"
+    iconColor: "text-pink-600",
   },
   {
     icon: GraduationCap,
@@ -50,8 +60,8 @@ const visaServices = [
     description: "Educational permits for all levels",
     features: ["University permits", "Research visas", "Training programs"],
     bgColor: "bg-indigo-100",
-    iconColor: "text-indigo-600"
-  }
+    iconColor: "text-indigo-600",
+  },
 ];
 
 export const Services = () => {
@@ -66,22 +76,24 @@ export const Services = () => {
             Saudi Arabian Visa Services
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            We provide all types of Saudi Arabian visas with fast processing and expert guidance. 
-            Licensed and approved by Saudi authorities.
+            We provide all types of Saudi Arabian visas with fast processing and
+            expert guidance. Licensed and approved by Saudi authorities.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {visaServices.map((service, index) => (
-            <Card 
-              key={index} 
-              className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-border/50 hover:border-primary/30"
-            >
+            <Card
+              key={index}
+              className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-border/50 hover:border-primary/30">
               <CardHeader className="text-center pb-4">
-                <div className={`w-16 h-16 mx-auto mb-4 rounded-full ${service.bgColor} flex items-center justify-center group-hover:scale-110 transition-transform`}>
+                <div
+                  className={`w-16 h-16 mx-auto mb-4 rounded-full ${service.bgColor} flex items-center justify-center group-hover:scale-110 transition-transform`}>
                   <service.icon className={`w-8 h-8 ${service.iconColor}`} />
                 </div>
-                <CardTitle className="text-xl font-bold">{service.title}</CardTitle>
+                <CardTitle className="text-xl font-bold">
+                  {service.title}
+                </CardTitle>
                 <p className="text-muted-foreground">{service.description}</p>
               </CardHeader>
               <CardContent className="pt-0">
@@ -104,16 +116,34 @@ export const Services = () => {
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {[
-              { step: "1", title: "Document Review", desc: "Submit your documents for verification" },
-              { step: "2", title: "Application", desc: "We prepare and submit your visa application" },
-              { step: "3", title: "Processing", desc: "Track your application status in real-time" },
-              { step: "4", title: "Delivery", desc: "Receive your approved visa quickly" }
+              {
+                step: "1",
+                title: "Document Review",
+                desc: "Submit your documents for verification",
+              },
+              {
+                step: "2",
+                title: "Application",
+                desc: "We prepare and submit your visa application",
+              },
+              {
+                step: "3",
+                title: "Processing",
+                desc: "Track your application status in real-time",
+              },
+              {
+                step: "4",
+                title: "Delivery",
+                desc: "Receive your approved visa quickly",
+              },
             ].map((item, index) => (
               <div key={index} className="text-center">
                 <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-xl">
                   {item.step}
                 </div>
-                <h4 className="font-semibold mb-2 text-foreground">{item.title}</h4>
+                <h4 className="font-semibold mb-2 text-foreground">
+                  {item.title}
+                </h4>
                 <p className="text-sm text-muted-foreground">{item.desc}</p>
               </div>
             ))}

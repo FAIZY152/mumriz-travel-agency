@@ -12,21 +12,21 @@ const testimonials = [
   },
   {
     name: "Fatima Khan",
-    location: "Karachi, Pakistan",
+    location: "Peshawar, Pakistan",
     text: "Made my Umrah journey possible with their quick visa processing. The team was very supportive and guided me at every step.",
     rating: 5,
     type: "Umrah Visa"
   },
   {
     name: "Mohammad Ali",
-    location: "Dubai, UAE",
+    location: "Karachi, Pakistan",
     text: "Reliable and trustworthy agency. They helped me get my family visa without any hassles. Highly recommended!",
     rating: 5,
     type: "Family Visa"
   },
   {
     name: "Sarah Abdullah",
-    location: "Cairo, Egypt",
+    location: "Lahore, Pakistan",
     text: "Professional service with competitive pricing. They made the visa application process very smooth and stress-free.",
     rating: 5,
     type: "Visit Visa"
