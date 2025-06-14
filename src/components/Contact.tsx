@@ -183,7 +183,7 @@ export const Contact = () => {
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
                     <Mail className="w-5 h-5 text-muted-foreground" />
-                    <span>Mumriz_999@yahoo.com</span>
+                    <span>mumrizbrothersoep3924@gmail.com</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <MapPin className="w-5 h-5 text-muted-foreground" />

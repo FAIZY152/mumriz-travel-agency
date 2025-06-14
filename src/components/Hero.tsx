@@ -16,11 +16,11 @@ export const Hero = () => {
         <div className="text-center text-white">
           <div className="mb-6">
             <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
-              Mumriz & Brothers
+              MUMRIZ & BROTHERS
             </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-yellow-500 mx-auto mb-4"></div>
             <p className="text-xl md:text-2xl font-light text-blue-100">
-              Licensed Travel Agency
+              OVERSEAS EMPLOYMENT PROMOTORS
             </p>
           </div>
 

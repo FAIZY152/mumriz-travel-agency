@@ -1,6 +1,9 @@
 import { Separator } from "@/components/ui/separator";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
+  const adminWhatsApp = "923443443047"; // Admin number without '+' (e.g., 92 for Pakistan)
+
   return (
     <footer className="bg-slate-900 text-white py-16">
       <div className="container mx-auto px-4">
@@ -14,12 +17,18 @@ export const Footer = () => {
               guidance.
             </p>
             <div className="flex space-x-4">
-              <div className="w-8 h-8 bg-blue-600 rounded flex items-center justify-center cursor-pointer hover:bg-blue-700 transition-colors">
-                <span className="text-xs font-bold">f</span>
-              </div>
-              <div className="w-8 h-8 bg-green-600 rounded flex items-center justify-center cursor-pointer hover:bg-green-700 transition-colors">
+              <Link to={"https://www.facebook.com/MUMRIZOEP"}>
+                <div className="w-8 h-8 bg-blue-600 rounded flex items-center justify-center cursor-pointer hover:bg-blue-700 transition-colors">
+                  <span className="text-xs font-bold">f</span>
+                </div>
+              </Link>
+              <button
+                onClick={() =>
+                  (window.location.href = `https://wa.me/${adminWhatsApp}`)
+                }
+                className="w-8 h-8 bg-green-600 rounded flex items-center justify-center cursor-pointer hover:bg-green-700 transition-colors">
                 <span className="text-xs font-bold">W</span>
-              </div>
+              </button>
               <div className="w-8 h-8 bg-blue-400 rounded flex items-center justify-center cursor-pointer hover:bg-blue-500 transition-colors">
                 <span className="text-xs font-bold">@</span>
               </div>
@@ -56,7 +65,11 @@ export const Footer = () => {
             <h4 className="font-semibold mb-4">Contact Info</h4>
             <ul className="space-y-2 text-slate-300">
               <li>+923443443047</li>
-              <li>Mumriz_999@yahoo.com</li>
+              <li>mumrizbrothersoep3924@gmail.com</li>
+              <li>
+                ADDRESS : SHOP NO 4 IST FLOOR BOBBY SHOPPING CENTER ARBAB ROAD
+                PESHAWAR SADDAR
+              </li>
               <li>Peshawar, Pakistan</li>
               <li className="pt-2">
                 <span className="text-sm">🌐 English • اردو • العربية</span>

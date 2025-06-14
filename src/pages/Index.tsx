@@ -7,6 +7,7 @@ import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { useRef } from "react";
+import MapSection from "@/components/Map";
 
 const Index = () => {
   return (
@@ -17,6 +18,7 @@ const Index = () => {
       <About />
       <Testimonials />
       <Contact />
+      <MapSection />
       <Footer />
       <WhatsAppButton />
     </div>
