@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "http://mumrizoep.com",
+      "destination": "https://mumrizoep.com",
+      "permanent": true
+    },
+    {
+      "source": "http://www.mumrizoep.com",
+      "destination": "https://www.mumrizoep.com",
+      "permanent": true
+    }
+  ]
+}
